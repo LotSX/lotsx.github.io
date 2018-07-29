@@ -5,3 +5,4 @@ github_username: lotsx
 
 markdown: kramdown
 theme: jekyll-theme-midnight
+github: [metadata]
