@@ -2,3 +2,104 @@
 ---
 
 @import "{{ site.theme }}";
+
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+body {
+  color: rgba($base0, .7) !important;
+  background: $base03 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $base0 !important;
+}
+
+a {
+  color: $base1 !important;
+  background-color: transparent !important;
+  &:hover {
+    color: lighten($base1, 15%) !important;
+  }
+}
+
+.small {
+  color: $base01 !important;
+}
+
+.btn {
+  color: $yellow !important;
+  background-color: $base02 !important;
+  border: 1px solid lighten($base02, 3%) !important;
+
+  &:hover {
+    color: $yellow !important;
+    border: 1px solid darken($base02, 3%) !important;
+    background-color: darken($base02, 5%) !important;
+  }
+}
+
+blockquote {
+  border-left: 3px solid $base02 !important;
+}
+
+code {
+  color: $base0 !important;
+  background: $base02 !important;
+}
+
+pre {
+  background: $base02 !important;
+  code {
+    color: $base0 !important;
+  }
+}
+
+th {
+  border-bottom: 1px solid $base02 !important;
+  color: $base0 !important;
+}
+
+td {
+  border-bottom: 1px solid $base02 !important;
+}
+
+dt {
+  color: $base0 !important;
+}
+
+#header {
+  background: $base03 !important;
+  border-bottom: 4px solid #434343 !important;
+
+  a {
+    background-color: transparent !important;
+    border: 2px solid $yellow !important;
+  }
+}
+
+section {
+  #title {
+    h5 {
+      color: rgba($base1, .6) !important;
+    }
+
+    .credits {
+      color: rgba($base1, .5) !important;
+    }
+  }
+}
